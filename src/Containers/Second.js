@@ -28,7 +28,7 @@ import {inject, observer} from 'mobx-react';
 
 @inject('store')
 @observer
-class Main extends React.Component {
+class Second extends React.Component {
   render() {
     let counterValue = this.store.counter;
     return (
@@ -46,7 +46,7 @@ class Main extends React.Component {
             )}
             <View style={styles.body}>
               <View style={styles.sectionContainer}>
-                <Text style={styles.sectionTitle}>Step One</Text>
+                <Text style={styles.sectionTitle}>Second Screen</Text>
                 <Text style={styles.sectionDescription}>
                   Edit <Text style={styles.highlight}>App.js</Text> to change
                   this screen and then come back to see your edits.
@@ -68,10 +68,7 @@ class Main extends React.Component {
                 </Text>
               </View>
               <View style={styles.sectionContainer}>
-                <TouchableOpacity
-                  onPress={() => this.props.navigation.navigate('Second')}>
-                  <Text style={styles.sectionTitle}>Go to Second Screen</Text>
-                </TouchableOpacity>
+                <Text style={styles.sectionTitle}>Learn More</Text>
                 <Text style={styles.sectionDescription}>
                   Read the docs to discover what to do next:
                 </Text>
@@ -124,4 +121,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default Main;
+export default Second;

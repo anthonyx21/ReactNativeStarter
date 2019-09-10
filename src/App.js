@@ -9,7 +9,6 @@
 import React from 'react';
 import {inject, observer, Provider} from 'mobx-react';
 import DefaultStore from './MobX/DefaultStore';
-import Main from './Containers/Main';
 import {createAppContainer} from 'react-navigation';
 import MainNavigator from './Navigation/MainNavigator';
 
